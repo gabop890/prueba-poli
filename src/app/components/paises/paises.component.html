@@ -1,0 +1,33 @@
+<div class="primer_panel">
+  <h1>Países</h1>
+  <div class="div-button">
+    <button mat-flat-button (click)="addCountry()">Agregar País</button>
+  </div>
+</div>
+@for (pais of paises; track pais) {
+<mat-card class="card" appearance="outlined">
+  <a [routerLink]="['pais',  pais.id ]" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <mat-card-header>
+      <img class="flat" src="{{ pais.img }}" />
+    </mat-card-header>
+    <mat-card-content class="content">
+      <p>Continente: {{ pais.continentName }}</p>
+      <p>Población: {{ pais.population }}</p>
+      <p>Capital: {{ pais.capital }}</p>
+    </mat-card-content>
+  </a>
+  <mat-card-actions class="buttons">
+    <button mat-fab extended class="btn_edit" (click)="editCountry(pais)">
+      <mat-icon>edit</mat-icon>Editar
+    </button>
+    <button
+      mat-fab
+      extended
+      class="btn_delete"
+      (click)="deleteCountry(pais.id)"
+    >
+      <mat-icon>delete</mat-icon>Eliminar
+    </button>
+  </mat-card-actions>
+</mat-card>
+}

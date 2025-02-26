@@ -1,0 +1,12 @@
+@for (pais of paises; track pais) {
+<mat-card class="card" appearance="outlined">
+  <mat-card-header> </mat-card-header>
+  <img class="flat" src="{{ pais.img }}" />
+  <mat-card-content>
+    <p>{{ pais.countryName }}</p>
+  </mat-card-content>
+</mat-card>
+}
+<div class="div-button">
+  <button mat-flat-button (click)="goPaises()">Iniciar</button>
+</div>

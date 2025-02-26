@@ -1,0 +1,38 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .colorToolbar{
+    background-color: #006aff;
+  }
+  
+  .title-toolbar{
+    color: aliceblue;
+  }
+  
+  .app-container{
+    flex: 1;
+    height: 90%;
+  }
+  
+  .fondo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 30%;
+  }
+  
+  .btnm-menu{
+    color: white;
+    background-color: #006aff;
+    border: 0px ;
+  }
+  
+  .btn-exit{
+    width: 100%;
+  }
+
+  .nav-list{
+    background-color: #79aef8;
+  }

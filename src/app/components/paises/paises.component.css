@@ -1,0 +1,33 @@
+.card{
+    margin-left: 5%;
+    width: 25%;
+    display: inline-table;
+    text-align: center;
+    border: 0px;
+}
+
+.flat{
+    width: 100%;
+}
+
+.content{
+    text-align: left;
+}
+
+.primer_panel{
+    padding-left: 5%;
+}
+.buttons{
+    width: 100%;
+    column-gap: 10px;
+}
+
+.btn_delete{
+    background: rgb(252, 85, 85);
+    color: aliceblue;
+}
+
+.btn_edit{
+    background: rgb(87, 87, 236);
+    color: aliceblue;
+}

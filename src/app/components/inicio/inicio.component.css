@@ -1,0 +1,15 @@
+.card{
+    width: 25%;
+    display: inline-table;
+    text-align: center;
+    border: 0px;
+}
+
+.div-button{
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+.flat{
+    width: 100px;
+}

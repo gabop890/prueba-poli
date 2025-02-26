@@ -1,0 +1,100 @@
+<h2 mat-dialog-title>Pais</h2>
+<mat-dialog-content>
+  <form [formGroup]="countryForm">
+    <div class="form">
+      <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput formControlName="id" />
+        @if (countryForm.get("id")?.invalid && countryForm.get("id")?.touched) {
+        @if (countryForm.get("id")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe escribir un id del pais.</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="countryName" />
+        @if (countryForm.get("countryName")?.invalid &&
+        countryForm.get("countryName")?.touched) { @if
+        (countryForm.get("countryName")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe escribir el nombre del pais</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Descripción</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+        @if (countryForm.get("description")?.invalid &&
+        countryForm.get("description")?.touched) { @if
+        (countryForm.get("description")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe escribir una descripción del pais</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Población</mat-label>
+        <input matInput formControlName="population" type="number" />
+        @if (countryForm.get("population")?.invalid &&
+        countryForm.get("population")?.touched) { @if
+        (countryForm.get("population")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe escribir la población del pais</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Capital</mat-label>
+        <input matInput formControlName="capital" />
+        @if (countryForm.get("capital")?.invalid &&
+        countryForm.get("capital")?.touched) { @if
+        (countryForm.get("capital")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe escribir la capital del pais.</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Continente</mat-label>
+        <input matInput formControlName="continentName" />
+        @if (countryForm.get("continentName")?.invalid &&
+        countryForm.get("continentName")?.touched) { @if
+        (countryForm.get("continentName")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe escribir a que continente pertenece.</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Url de la bandera</mat-label>
+        <input matInput formControlName="img" />
+        @if (countryForm.get("img")?.invalid && countryForm.get("img")?.touched)
+        { @if (countryForm.get("img")?.hasError("required")) {
+        <div class="col-sm-12">
+          <small id="passwordHelp" class="text-danger"
+            >Debe colocar la url de la bandera.</small
+          >
+        </div>
+        } }
+      </mat-form-field>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="add()">Guardar</button>
+</mat-dialog-actions>
