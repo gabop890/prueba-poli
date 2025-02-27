@@ -15,7 +15,10 @@ export const routes: Routes = [
       {
         path: 'paises',
         component: PaisesComponent,
-        children: [{ path: 'pais/:id', component: DetallePaisComponent }],
+      },
+      {
+        path: 'paises/pais/:id',
+        component: DetallePaisComponent,
       },
     ],
   },

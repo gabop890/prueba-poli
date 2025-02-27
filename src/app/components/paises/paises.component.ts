@@ -7,11 +7,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
 import { PaisDialogComponent } from '../../dialogs/pais-dialog/pais-dialog.component';
 import Swal from 'sweetalert2';
-import { RouterLink, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-paises',
-  imports: [MatCardModule, MatButtonModule, MatIconModule, RouterModule, RouterLink],
+  imports: [MatCardModule, MatButtonModule, MatIconModule, RouterModule],
   templateUrl: './paises.component.html',
   styleUrl: './paises.component.css',
 })
@@ -67,9 +67,9 @@ export class PaisesComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe({
       next: (val) => {
-        if (val) {
+          console.log("fin");
+          
           this.getCountryList();
-        }
       },
     });
   }

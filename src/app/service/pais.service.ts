@@ -17,8 +17,6 @@ export class PaisService {
   }
 
   setPaises(paisList: Pais[]) {
-    console.log('prueba', paisList);
-
     this.paises = paisList;
   }
 
@@ -35,6 +33,6 @@ export class PaisService {
   }
 
   editCountry(value: any) {
-    return this.http.put<Pais>(this.urlBackend + '/paises', value);
+    return this.http.put<Pais>(this.urlBackend + `/paises/${value.id}`, value);
   }
 }

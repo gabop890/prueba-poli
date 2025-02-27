@@ -57,12 +57,21 @@
     },
     {
       "id": "Brasil",
-      "description": "Estados Unidosnota 2​ (EE. UU.; en inglés: United States, siglas: US),nota 3​ oficialmente Estados Unidos de América (EUA; en inglés: United States of America, siglas: USA),13​ es un país soberano constituido en una república federal constitucional compuesta por cincuenta estados y un distrito federal. Limita al norte con Canadá y al sur, con México. Su capital es Washington D. C. y su ciudad más poblada, Nueva York. La mayor parte del país se ubica en el medio de América del Norte ―donde se encuentran sus 48 estados contiguos y Washington D. C.―, entre los océanos Pacífico y Atlántico.",
+      "description": "Brasil, oficialmente República Federativa de Brasil (República Federativa do Brasilⓘ),10​11​ es un país soberano de América del Sur que comprende la mitad oriental del continente y algunos grupos de pequeñas islas en el océano Atlántico. Su capital es Brasilia y su ciudad más poblada es São Paulo. Es el tercer país más grande de América. Con una superficie estimada en más de 8 500 000 km²,3​ es el quinto país más grande del mundo en área total (equivalente al 47,69 % del territorio sudamericano).",
       "countryName": "Brasil",
       "population": 203062512,
       "capital": "Brasilia",
       "continentName": "America",
-      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/203px-Flag_of_the_United_States.svg.png"
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/203px-Flag_of_Brazil.svg.png"
+    },
+    {
+      "id": "turkey",
+      "description": "Turquía (en turco: Türkiye), en lenguaje formal conocida como República de Turquía,nota 1​ es un país transcontinental, con la mayor parte de su territorio situado en Asia Occidental y una menor (al oeste del mar de Mármara) en Europa Oriental, extendiendose por toda la península de Anatolia y en Tracia Oriental por la zona de los Balcanes.",
+      "countryName": "Turquia",
+      "population": 84339067,
+      "capital": "Ankara",
+      "continentName": "Asia",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1024px-Flag_of_Turkey.svg.png"
     }
   ]
 }

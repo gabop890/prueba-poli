@@ -1,1 +1,20 @@
-<p>detalle-pais works!</p>
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ pais.countryName }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="content">
+      <img mat-card-image class="flat" src="{{ pais.img }}" />
+      <mat-list>
+        <mat-list-item>Continente: {{ pais.continentName }}</mat-list-item>
+        <mat-list-item>Población: {{ pais.population }}</mat-list-item>
+        <mat-list-item>Capital: {{ pais.capital }}</mat-list-item>
+      </mat-list>
+    </div>
+    <p>{{ pais.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+      <button mat-button [routerLink]="['/dashboard/paises']">Atras</button>
+  </mat-card-actions>
+</mat-card>
